@@ -1,0 +1,58 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-content { width: 55%; }
+.mode-portrait .sl-content { width: 100%; }
+.mode-landscape .sl-visual { width: 45%; display: flex; }
+.mode-portrait .sl-visual { display: none; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Content column -->
+    <div class="sl-content flex flex-col justify-between p-12">
+
+      <!-- Logo -->
+      <div class="flex items-center gap-2.5">
+        <div class="w-9 h-9 bg-orange-500 rounded-xl flex items-center justify-center">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+        </div>
+        <span class="text-slate-900 font-bold text-xl tracking-tight">GymPulse</span>
+      </div>
+
+      <!-- Headline block -->
+      <div>
+        <div class="inline-flex items-center bg-orange-50 border border-orange-200 text-orange-600 text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full mb-8">
+          Gym Operations Platform
+        </div>
+        <h1 class="text-5xl font-black text-slate-900 leading-none tracking-tight mb-6">
+          Run Your Gym.<br/>
+          <span class="text-orange-500">Own Your Data.</span>
+        </h1>
+        <p class="text-slate-600 text-base leading-relaxed" style="max-width: 380px;">
+          The all-in-one command center for gym owners — unifying member check-ins, equipment maintenance, and trainer scheduling in a single, proactive dashboard.
+        </p>
+      </div>
+
+      <!-- Attribution -->
+      <div>
+        <data-attribution />
+      </div>
+
+    </div>
+
+    <!-- Visual column -->
+    <div class="sl-visual relative overflow-hidden">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=modern%20premium%20gym%20interior%2C%20sleek%20rows%20of%20equipment%2C%20warm%20golden%20light%2C%20editorial%20photography%2C%20cinematic%20wide%20shot"
+        alt="Modern gym interior"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent"></div>
+    </div>
+
+  </div>
+</section>
