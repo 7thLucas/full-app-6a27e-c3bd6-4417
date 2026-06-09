@@ -1,0 +1,1 @@
+Build me an app for gym owners to help them manage member check-ins, equipment maintenance, and trainer schedules with the goal to increase member engagement and equipment uptime
