@@ -1,0 +1,95 @@
+<style>
+.mode-landscape .sl-main { flex-direction: row; }
+.mode-portrait .sl-main { flex-direction: column; }
+.mode-landscape .sl-content { width: 62%; }
+.mode-portrait .sl-content { width: 100%; }
+.mode-landscape .sl-visual { width: 38%; display: flex; }
+.mode-portrait .sl-visual { display: none; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-main flex h-full">
+
+    <!-- Narrative side -->
+    <div class="sl-content flex flex-col p-12 gap-5">
+
+      <!-- Header -->
+      <div>
+        <div class="inline-block bg-orange-50 border border-orange-200 text-orange-600 text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full mb-3">
+          The Case for GymPulse
+        </div>
+        <h2 class="text-3xl font-black text-slate-900 leading-tight">
+          Most gyms operate without a clear<br/>picture of what's actually happening.
+        </h2>
+      </div>
+
+      <!-- Problem + Solution zones -->
+      <div class="flex flex-col gap-4 flex-1">
+
+        <!-- Problem zone -->
+        <div class="flex-1 bg-red-50 border border-red-100 rounded-2xl p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center shrink-0">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round">
+                <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+              </svg>
+            </div>
+            <span class="font-bold text-red-700 text-xs uppercase tracking-wider">The Problem</span>
+          </div>
+          <div class="flex flex-col gap-2.5 text-sm text-slate-700">
+            <div class="flex items-start gap-2">
+              <span class="text-red-400 shrink-0 mt-0.5">▸</span>
+              <span>Members quietly stop showing up — nobody notices until they've already cancelled their membership.</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-red-400 shrink-0 mt-0.5">▸</span>
+              <span>Equipment fails at peak hours because maintenance runs on memory, not a system.</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-red-400 shrink-0 mt-0.5">▸</span>
+              <span>Trainer schedules live across texts, whiteboards, and personal calendars — gaps and conflicts are invisible until it's too late.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Solution zone -->
+        <div class="flex-1 bg-slate-900 rounded-2xl p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center shrink-0">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <span class="font-bold text-orange-400 text-xs uppercase tracking-wider">The Solution</span>
+          </div>
+          <div class="flex flex-col gap-2.5 text-sm text-slate-300">
+            <div class="flex items-start gap-2">
+              <span class="text-orange-400 shrink-0 mt-0.5">▸</span>
+              <span>Real-time check-in tracking with automated low-engagement alerts — catch at-risk members weeks before they cancel.</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-orange-400 shrink-0 mt-0.5">▸</span>
+              <span>Equipment maintenance logs with scheduled service reminders — prevent breakdowns before they strike.</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-orange-400 shrink-0 mt-0.5">▸</span>
+              <span>Centralized trainer planner with conflict detection — every shift covered, every session accounted for.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Visual side -->
+    <div class="sl-visual relative overflow-hidden">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=gym%20owner%20reviewing%20digital%20dashboard%20on%20laptop%20at%20modern%20gym%20reception%20desk%2C%20warm%20focused%20lighting%2C%20professional%20business%20photography"
+        alt="Gym owner reviewing operations dashboard"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent"></div>
+    </div>
+
+  </div>
+</section>
